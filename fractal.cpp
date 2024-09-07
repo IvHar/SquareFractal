@@ -20,7 +20,6 @@ void createRectangle(RenderWindow &window, pair<int, int> position, int l) {
 		sleep(milliseconds(75));
 		srand(time(0));
 		Color color(rand() % 256, rand() % 256, rand() % 256);
-		pair <int, int> bottomRightPos = make_pair(position.first + l, position.second + l);
 
 		RectangleShape rect(Vector2f(l, l));
 		rect.setPosition(position.first, position.second);
